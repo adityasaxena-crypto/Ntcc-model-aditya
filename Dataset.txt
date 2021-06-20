@@ -1,0 +1,329 @@
+Data source
+Taken from chapter 5 of Machine learning cookbook for cyber security
+
+Data dictionary
+number in brackets states the number of described features
+
+"…" - stands for multiple optional names that match the given pattern
+
+.
+
+…ip, …port
+
+(4): IP and port of client / srver
+
+packets_…
+
+(3): Number of packets sent by client / server / both
+
+ack_…
+
+(3): Number of ACK packets sent by client / server / both
+
+packetsAB_ratio
+
+(1): Ratio between packets sent by client and sent by server
+
+asn_…
+
+(2): Number of autonomous systems served as client, server
+
+push_…
+
+(3): Number of packets with PSH flag sent by client / server / both
+
+bytes_…
+
+(3): Number of bytes sent by client / server / both
+
+reset_…
+
+(3): Number of packets with RST flag sent by client / server / both
+
+bytesAB_ratio
+
+(1): Ratio between number of bytes sent and number of bytes received
+
+sslcountcertificates
+
+(1): Number of SSL certificates
+
+cap_date
+
+(1): date of data capturing start
+
+sslcountclient_…
+
+(6): Client: Number of supported SSL cipher algorithms / ciphersuites / compressions / eliptic curves / key exchange algorithms / MAC algorithms
+
+country_…
+
+(2): Number of countries systems served as client / server
+
+sslcountserver_…
+
+(6): Server: Number of supported SSL cipher algorithms / ciphersuites / compressions / eliptic curves / key exchange algorithms / MAC algorithms
+
+daysTime
+
+(1): When during the day communication was established
+
+ssldomserver_ciphersuite
+
+(1): Number of SSL versions
+
+dns_alexaRank
+
+(1): DNS response server Alexa rank
+
+ssldomserver_compression
+
+(5): Dominated SSL ciphersuite / eliptic curve / server name / server rank / version
+
+dnscountaddresses
+
+(4): Number of adresses / answer / authoritative / additional fields in DNS response
+
+sslhandshakeduration_…
+
+(10): SSL handshake duration: Minimum value, quartile 1, average, median (quartile 2), sum, quartile 3, maximum value, standard deviation, variance, entropy
+
+dnscountcanon_names
+
+(1): Number of canonical names in DNS response
+
+sslratio…
+
+(7): Ratio between ssl sessions and: expired certificates / client cipher algorithms / ciphersuits / eliptic curves / client key exchange algorithms / client MAC algorithms / server names
+
+dns_flag
+
+(1): DNS response flags combinations
+
+sslreqbytes_…
+
+(10): Number of request bytes: Minimum value, quartile 1, average, median (quartile 2), sum, quartile 3, maximum value, standard deviation, variance, entropy
+
+dnshostname
+
+(1): DNS host name
+
+sslrespbytes_…
+
+(10): Number of response bytes: Minimum value, quartile 1, average, median (quartile 2), sum, quartile 3, maximum value, standard deviation, variance, entropy
+
+dnsminttl
+
+(1): DNS response minimal time-to-live
+
+start
+
+(1): session start (date-time)
+
+dnsprebad_requests
+
+(1): Number of preceding bad DNS responses
+
+tcpanalysis…
+
+(6): TCP: Number of packets with Keep Alive packets / lost segments / packets received out of order / retransmitted packets / reused ports / duplicake ACKs
+
+dns_time
+
+(1): Time took to receive DNS response
+
+ttlA…
+
+(10): TCP packet time-to-live sent by client: Minimum value, quartile 1, average, median (quartile 2), sum, quartile 3, maximum value, standard deviation, variance, entropy
+
+dsfield…
+
+(2): Differentiated Services (DS) field sent by client / server
+
+ttl_…
+
+(10): TCP packet time-to-live: Minimum value, quartile 1, average, median (quartile 2), sum, quartile 3, maximum value, standard deviation, variance, entropy
+
+duration
+
+(1): Session duration
+
+ttlB…
+
+(10): TCP packet time-to-live sent by server: Minimum value, quartile 1, average, median (quartile 2), sum, quartile 3, maximum value, standard deviation, variance, entropy
+
+httpbytes…
+
+(10): Number of bytes sent by client over HTTP: Minimum value, quartile 1, average, median (quartile 2), sum, quartile 3, maximum value, standard deviation, variance, entropy.
+
+urg_…
+
+(3): Packets with URG flag sent by client / server / both
+
+httpcookiecount
+
+(1): Total number of cookie values
+
+weekDay
+
+(1): day of week (Sunday, Monday, …)
+
+httpcookievalues_…
+
+(10): Number of cookie values: Minimum value, quartile 1, average, median (quartile 2), sum, quartile 3, maximum value, standard deviation, variance, entropy
+
+domain / subdomain / suffix
+
+(3): Dminated host's URL: domain / subdomain / suffix
+
+httpcount…
+
+(6): HTTP: Number of hosts / unique content types used in request / unique response codes / unique response content types / transactions / unique user agents
+
+isadhttp
+
+(1): subdomain of HTTP dominated host includes ad-related keywords
+
+httpdom…
+
+(8): Dominated HTTP: browser / browser version / host / host Alexa rank / operating system / operating system version / request contetn type / response code / response contetn type /
+
+iscdnhttp
+
+(1): subdomain of HTTP dominated host includes CDN-related keywords
+
+httpdomis_bot
+
+(1): Is most of HTTP connections created by known bot
+
+iscloudhttp
+
+(1): subdomain of HTTP dominated host includes cloud-related keywords
+
+http_GET
+
+(1): Number of HTTP requests submited with GET method
+
+is_…
+
+(3): session protocol is DNS / HTTP / SSL
+
+httphas…
+
+(4): Does HTTP request have a location / referrer / content type / user agent field
+
+isghttp
+
+(1): subdomain of HTTP dominated host includes g-related keywords
+
+httphasrespcontenttype
+
+(1): Does HTTP response have a content type field
+
+isimghttp
+
+(1): subdomain of HTTP dominated host includes image-related keywords
+
+httpinterarrivel_…
+
+(10): HTTP request-response inter arrival time: Minimum value, quartile 1, average, median (quartile 2), sum, quartile 3, maximum value, standard deviation, variance, entropy
+
+ismhttp
+
+(1): subdomain of HTTP dominated host includes mobile-related keywords
+
+http_POST
+
+(1): Number of HTTP requests submited with POST method
+
+ismakersite_http
+
+(1): subdomain of HTTP dominated host is of a maker's site
+
+httpreqbytes_…
+
+(10): HTTP request bytes: Minimum value, quartile 1, average, median (quartile 2), sum, quartile 3, maximum value, standard deviation, variance, entropy
+
+ismediahttp
+
+(1): subdomain of HTTP dominated host includes media-related keywords
+
+httprespbytes_…
+
+(10): HTTP response bytes: Minimum value, quartile 1, average, median (quartile 2), sum, quartile 3, maximum value, standard deviation, variance, entropy
+
+isnumericurl_http
+
+(1): subdomain of HTTP dominated host is numeric
+
+httptime…
+
+(10): Time took to HTTP server to return response: Minimum value, quartile 1, average, median (quartile 2), sum, quartile 3, maximum value, standard deviation, variance, entropy
+
+isnumericurlwithport_http
+
+(1): subdomain of HTTP dominated host is numeric plus port name
+
+label
+
+(1): malware label
+
+istvhttp
+
+(1): HTTP dominated host has TV-related keywords
+
+labelSS
+
+(1): malware label
+
+Bissystem_port
+
+(1): destination port is in the range of [1, 1023]
+
+packetinterarrivelA…
+
+(10): Client packets inter arival time: Minimum value, quartile 1, average, median (quartile 2), sum, quartile 3, maximum value, standard deviation, variance, entropy
+
+Bisuser_port
+
+(1): destination port is in the range of [1024, 49151]
+
+packetinterarrivel_…
+
+(10): Packets inter arival time: Minimum value, quartile 1, average, median (quartile 2), sum, quartile 3, maximum value, standard deviation, variance, entropy
+
+Bisdynamicandorprivateport
+
+(1): destination port is in the range of [49152, 65535]
+
+packetinterarrivelB…
+
+(10): Server packets inter arival time: Minimum value, quartile 1, average, median (quartile 2), sum, quartile 3, maximum value, standard deviation, variance, entropy
+
+Bportis_…
+
+(10): Destination port is one of recent top 10 most frequent: 80, 23, etc.
+
+packetsizeA_…
+
+(10): Client packets size: Minimum value, quartile 1, average, median (quartile 2), sum, quartile 3, maximum value, standard deviation, variance, entropy
+
+subdomainis…
+
+(10): subdomain of HTTP dominated host is one of recent top 10 most frequent
+
+packetsize…
+
+(10): Packets size: Minimum value, quartile 1, average, median (quartile 2), sum, quartile 3, maximum value, standard deviation, variance, entropy
+
+domainis…
+
+(10): domain of HTTP dominated host is one of recent top 10 most frequent
+
+packetsizeB_…
+
+(10): Server packets size: Minimum value, quartile 1, average, median (quartile 2), sum, quartile 3, maximum value, standard deviation, variance, entropy
+
+suffixis…
+
+(4): suffix of HTTP dominated host is one of recent top 4most frequent: com, net, etc.
